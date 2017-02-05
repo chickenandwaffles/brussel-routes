@@ -56,6 +56,7 @@ $route['sleep'] = 'first/zzz';
 $route['lock/em/up'] = "Welcome/shucks";
 $route['show/(:num)'] = 'first/gimme/$1';
 $route['([a-z]{4})/bingo'] = 'bingo/index';
+$route['comp(\d{4})/.*'] = "wise/bingo";
 
 $route['dunno'] = function() {
 	$source = '../data/surprise.jpg'; // an image you provide, outside of "oublic"!
