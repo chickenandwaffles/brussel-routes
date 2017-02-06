@@ -49,16 +49,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Hogwarts';
-$route['404_override'] = 'Hogwarts/random';
-$route['translate_uri_dashes'] = FALSE;
-$route['sleep'] = 'first/zzz';
-$route['lock/em/up'] = "Hogwarts/shucks";
-$route['show/(:num)'] = 'first/gimme/$1';
-$route['([a-z]{4})/bingo'] = 'bingo/index';
-$route['comp(\d{4})/.*'] = "wise/bingo";
+	$route['default_controller'] = 'welcome';
+	$route['404_override'] = '';
+	$route['translate_uri_dashes'] = FALSE;
+	$route['sleep'] = 'first/zzz';
+	$route['lock/em/up'] = "Welcome/shucks";
+	$route['show/(:num)'] = 'first/gimme/$1';
 
-$route['dunno'] = function() {
+	$route['dunno'] = function() { // Franciso Lachowski's image is shown when lower left image is clicked
 	$source = '../data/surprise.jpg'; // an image you provide, outside of "oublic"!
 	// set the mime type for that image (jpeg, png, etc)
 	header("Content-type: image/jpeg");
