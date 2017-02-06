@@ -42,11 +42,14 @@ class Hogwarts extends Application
     }
     
     public function random() {
+        // this is the view we want shown
         $this->data['pagebody'] = 'justone';
         
+        // build the list o authors, to pass on to our view
         $source = $this->quotes->all();
         $authors = array();
         
+        // select a random number and retrieve the quote corresponding to the number
         $count = count($source);
         $index = rand(0, $count-1);
         $record = $source[$index];
