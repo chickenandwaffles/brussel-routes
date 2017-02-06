@@ -7,6 +7,10 @@ class Bingo extends Application {
 		parent::__construct();
 	}
 
+	/**
+	 * Call Socrates' quote within this view
+	 *
+	 **/
 	function index() {
 		$this->data['pagebody'] = 'justone';
 
